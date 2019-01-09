@@ -15,7 +15,8 @@
     "node": "8.x"
 	},
   "repository": {
-    "url": "https://glitch.com/edit/#!/vast-butterfly"
+    "type": "git",
+    "url": "https://github.com/atiyahaider/Timestamp-microservice"
   },
 	"keywords": [
 		"node",
