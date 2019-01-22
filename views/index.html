@@ -15,9 +15,9 @@
         <ol><h3>User Stories :</h3>
           <li>The API endpoint is <code>GET https://vast-butterfly.glitch.me/api/timestamp/:date_string?</code></li>
           <li>A date string is valid if can be successfully parsed by <code>new Date(date_string)</code>.<br>
-          Note that the unix timestamp needs to be an <strong>integer</strong> (not a string) specifying <strong>milliseconds</strong>.<br> 
-          In our test we will use date strings compliant with ISO-8601 (e.g. <code>"2019-01-13"</code>) because this will ensure an UTC timestamp.</li>
-          <li>If the date string is <strong>empty</strong> it should be equivalent to trigger <code>new Date()</code>, i.e. the service uses the current timestamp.</li>
+          The unix timestamp should be an <strong>integer</strong> (not a string) specifying <strong>milliseconds</strong>.<br> 
+          Date strings should be compliant with ISO-8601 (e.g. <code>"2019-01-13"</code>) because this will ensure a UTC timestamp.</li>
+          <li>If the date string is <strong>empty</strong> it would be equivalent to <code>new Date()</code>, i.e. the service uses the current timestamp.</li>
           <li>If the date string is <strong>valid</strong> the API returns a JSON having the structure<br>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>{"unix": &lt;date.getTime()&gt;, "utc": &lt;date.toUTCString()&gt; }</code><br>
             e.g. <code>{"unix": 1547387904000, "utc": "Sun, 13 Jan 2019 13:58:24 GMT"}</code></li>
