@@ -5,6 +5,7 @@
   <head>
     <title>Timestamp Microservice</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet" type="text/css">
   </head>
 
@@ -12,7 +13,7 @@
     <div class="container">
       <h2>API Project: Timestamp Microservice</h2>
       <div class="user-stories">
-        <ol><h3>User Stories :</h3>
+        <ol><h3 class="top-padding bottom-padding">User Stories :</h3>
           <li>The API endpoint is <code>GET https://vast-butterfly.glitch.me/api/timestamp/:date_string?</code></li>
           <li>A date string is valid if can be successfully parsed by <code>new Date(date_string)</code>.<br>
           The unix timestamp should be an <strong>integer</strong> (not a string) specifying <strong>milliseconds</strong>.<br> 
@@ -27,17 +28,27 @@
         </ol>
       </div>
      
+      <br>
       <h3>Example Usage:</h3>
       <ul>
         <li><a href="api/timestamp/2019-01-13">https://vast-butterfly.glitch.me/api/timestamp/2019-01-13</a></li>
         <li><a href="api/timestamp/1547337600000">https://vast-butterfly.glitch.me/api/timestamp/1547337600000</a></li>
       </ul>
       
-      <h3>Example Output:</h3>
+      <h3 class="top-padding">Example Output:</h3>
       <p>
         <code>{"unix":1547337600000, "utc":"Sun, 13 Jan 2019 00:00:00 GMT"}</code>
       </p>
       
+      <br>
+      <table id="footer">
+        <tr>
+          <td>
+          <a href="https://github.com/atiyahaider/Request-header-parser" target="_blank"><i class="fab fa-github"></i>&nbsp;&nbsp;VIEW CODE</a>            
+          </td>
+          <td class="right">Designed and Coded By: <a target="_blank" href="https://codepen.io/atiyahaider/">Atiya Haider</a></td>
+        </tr>
+      </table>
     </div>
   </body>
 </html>
